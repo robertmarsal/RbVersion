@@ -1,0 +1,39 @@
+{
+    "name": "robertboloc/rbversion",
+    "type": "module",
+    "description": "Versioning for Zend Framework 2 applications",
+    "keywords": [
+        "version",
+        "zf2"
+    ],
+    "homepage": "http://github.com/robertboloc/RbVersion",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Boloc",
+            "email": "robertboloc@gmail.com",
+            "homepage": "http://robertboloc.eu",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "zendframework/zendframework": "2.*"
+    },
+    "require-dev": {
+        "robertboloc/zf2-components-list-generator": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "RbVersion": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.0.x-dev"
+        }
+    }
+}
