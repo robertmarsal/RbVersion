@@ -20,7 +20,8 @@
         "php": ">=5.3.0",
         "zendframework/zend-view": "2.*",
         "zendframework/zend-servicemanager": "2.*",
-        "zendframework/zend-loader": "2.*"
+        "zendframework/zend-loader": "2.*",
+        "zendframework/zend-mvc": "2.*"
     },
     "require-dev": {
         "robertboloc/zf2-components-list-generator": "dev-master"
