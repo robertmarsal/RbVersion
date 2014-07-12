@@ -1,7 +1,7 @@
 {
     "name": "robertboloc/rbversion",
     "type": "module",
-    "description": "Versioning for Zend Framework 2 applications",
+    "description": "App versioning for Zend Framework 2 applications",
     "keywords": [
         "version",
         "zf2"
@@ -18,7 +18,9 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "zendframework/zendframework": "2.*"
+        "zendframework/zend-view": "2.*",
+        "zendframework/zend-servicemanager": "2.*",
+        "zendframework/zend-loader": "2.*"
     },
     "require-dev": {
         "robertboloc/zf2-components-list-generator": "dev-master"

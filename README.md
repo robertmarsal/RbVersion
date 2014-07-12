@@ -1,6 +1,6 @@
 # RbVersion
 
-Simple versioning for Zend Framework 2 applications.
+App versioning for Zend Framework 2 applications.
 
 ## Table of contents
 - [Installation](#installation)
@@ -12,9 +12,12 @@ Simple versioning for Zend Framework 2 applications.
 
 ## Usage
 
+### View Helper
+
+### Controller Helper
+
 ## Roadmap
 
-* Add tests
 * Add travis-CI integration
 * Add scrutinizer integration
 * Add more providers (git)

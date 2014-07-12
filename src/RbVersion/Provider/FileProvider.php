@@ -7,6 +7,13 @@ use RbVersion\Exception\FileNotFoundException;
 
 class FileProvider implements ProviderInterface
 {
+    /**
+     * Returns the version in string format.
+     *
+     * @param object $config
+     * @return string
+     * @throws FileNotFoundException
+     */
     public function getVersion($config)
     {
         if(!file_exists($config->provider['file'])) {
