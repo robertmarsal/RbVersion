@@ -51,7 +51,7 @@ class Version extends AbstractHelper implements ServiceLocatorAwareInterface
      * @return string
      * @throws ProviderTypeNotSetException
      */
-    public function __invoke()
+    public function __invoke($withName = false)
     {
         $config = $this->getConfig();
 
@@ -62,6 +62,12 @@ class Version extends AbstractHelper implements ServiceLocatorAwareInterface
         $providerClass = '\RbVersion\Provider\\' . ucfirst($config->provider['type']) . 'Provider';
         $provider = new $providerClass();
 
-        return $provider->getVersion($config);
+        $version = $provider->getVersion($config);
+
+        if($withName) {
+            return $version->getNumber() . ' ' . $version->getName();
+        }
+
+        return $version->getNumber();
     }
 }
