@@ -25,10 +25,10 @@ intended (and not an old cached one).
 
 ```
 <!-- Stylesheets -->
-<link href="https://mywebsite.com/style.css?v=<?= $this->rbVersion() ?>" media="all" rel="stylesheet" type="text/css" />
+<link href="//website.com/style.css?v=<?= $this->rbVersion() ?>"/>
 
 <!-- Scripts -->
-<script src="https://mywebsite.com/script.js?v=<?= $this->rbVersion() ?>" type="text/javascript"></script>
+<script src="//website.com/script.js?v=<?= $this->rbVersion() ?>"></script>
 ```
 
 ## Installation

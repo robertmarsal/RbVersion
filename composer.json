@@ -24,7 +24,8 @@
         "zendframework/zend-mvc": "2.*"
     },
     "require-dev": {
-        "robertboloc/zf2-components-list-generator": "dev-master"
+        "robertboloc/zf2-components-list-generator": "dev-master",
+        "phpunit/phpunit": "4.1.*"
     },
     "autoload": {
         "psr-0": {
