@@ -44,7 +44,11 @@ class Version
         $this->name = $name;
     }
 
-    public function __construct($number, $name = '')
+    /**
+     * @param string $number
+     * @param string $name
+     */
+    public function __construct($number = '', $name = '')
     {
         $this->number = $number;
         $this->name   = $name;

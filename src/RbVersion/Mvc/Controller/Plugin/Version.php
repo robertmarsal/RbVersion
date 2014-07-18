@@ -11,7 +11,7 @@ class Version extends AbstractPlugin implements ServiceLocatorAwareInterface
     /**
      * @var \Zend\ServiceManager\ServiceLocatorInterface
      */
-    private $serviceLocator;
+    protected $serviceLocator;
 
     /**
      * @param \Zend\ServiceManager\ServiceLocatorInterface $serviceLocator
