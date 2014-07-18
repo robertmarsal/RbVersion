@@ -6,10 +6,13 @@ return array(
             /**
              * Accepted types:
              *     - file
-             *     - git
+             *     - direct
              */
-            'type' => 'file',
-            'file'=> '/tmp/version.php',
+//            'type' => 'file',
+//            'file'=> '/tmp/version.php',
+            'type' => 'direct',
+            'number'=> '1.2.3',
+            'name'=> 'Amazing',
         ),
     ),
     'controller_plugins' => array(

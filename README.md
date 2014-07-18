@@ -5,6 +5,7 @@ Application versioning for Zend Framework 2.
 ## Table of contents
 - [About](#about)
 - [Installation](#installation)
+- [Configuration](#configuration)
 - [Usage](#usage)
 - [Roadmap](#roadmap)
 
@@ -32,6 +33,55 @@ intended (and not an old cached one).
 ```
 
 ## Installation
+
+## Configuration
+
+The default configuration of the module can be found in the file `config/module.config.php`.
+To override the defaults, add your values under the `rb_version` key in the `config/autoload/local.php`
+file of your application, using the same structure as in the defaults.
+
+### Provider
+
+The provider is the source of the version. Two providers are implemented at the moment: **direct** and **file**.
+
+#### Direct
+
+With this provider the version comes directly from the configuration array. An example of direct provider configuration:
+
+```
+'rb_version' => array(
+'provider' => array(
+        'type' => 'direct',
+        'number'=> '1.2.3',
+        'name'=> 'Amazing',
+    ),
+)
+```
+
+#### File
+
+With this provider the configuration comes from a php file located somewehere on the disk. The configuration for this provider is
+as follows:
+
+```
+'rb_version' => array(
+'provider' => array(
+        'type' => 'file',
+        'file'=> '/tmp/version.php',
+    ),
+)
+```
+
+The content of the version file should be similar to the following example:
+
+```
+<?php
+
+use RbVersion\Model\Version as RbVersion;
+
+return new RbVersion('1.2.3', 'Amazing Antilope');
+
+```
 
 
 ## Usage
