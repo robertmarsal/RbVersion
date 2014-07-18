@@ -1,5 +1,9 @@
 # RbVersion
 
+[![Build Status](https://scrutinizer-ci.com/g/robertboloc/RbVersion/badges/build.png?b=master)](https://scrutinizer-ci.com/g/robertboloc/RbVersion/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/robertboloc/RbVersion/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/robertboloc/RbVersion/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/robertboloc/RbVersion/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/robertboloc/RbVersion/?branch=master)
+
 Application versioning for Zend Framework 2.
 
 ## Table of contents
